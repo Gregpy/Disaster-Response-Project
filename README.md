@@ -16,7 +16,12 @@ The file process_data.py loads, cleans the data, and saves it as an SQL database
 
 ## How to Interact with the Project
 
-From a terminal prompt, with relevent files for data training in the zip folder, run process_data.py to process the data. Then run train_classifier.py to train the data. And finally run run.py to run the web app where messages can be classified into relevant categories. 
+From a terminal prompt at the location of relevent files for data training in the zip folder, one can run
+
+* 'python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db' to process the data
+* 'python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl' to train the data
+* 'python run.py' to run the web app where messages can be classified into relevant categories 
 
 ## Licensing and Acnknowledgements
-[here](https://www.figure-eight.com/)
+The data was collected by Figure 8. Licensing and and information on the data can be found on Figure 8 [here](https://www.figure-eight.com/). Feel free to use the code otherwise.
+
